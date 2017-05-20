@@ -1,13 +1,8 @@
 FROM composer:latest
 
-COPY docker-entrypoint.sh /docker-entrypoint.sh
-
-COPY vendor /app/vendor
-RUN cd /usr/local/bin && ln -s /app/vendor/bin/* .
-VOLUME /app
-
-# COPY composer* /app/
-# RUN /usr/bin/composer install
+ENV PATH="/toolbox/vendor/bin:${PATH}"
+COPY vendor /toolbox/vendor
+COPY sys/docker-entrypoint.sh /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 WORKDIR /app

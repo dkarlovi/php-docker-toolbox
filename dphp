@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+IMAGE=dkarlovi/php-toolbox
+TAG=latest
+
+tty=
+tty -s && tty=--tty
+
+docker run --rm ${tty} --interactive \
+    --user "$(id -u):$(id -g)" \
+    --volume "${HOME}/.composer:/composer" \
+    --volume "$(pwd):/app" \
+    "${IMAGE}:${TAG}" ${@}
