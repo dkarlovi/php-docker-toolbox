@@ -3,6 +3,10 @@
 IMAGE=dkarlovi/php-toolbox
 TAG=latest
 
+# ensure Compose cache folder exists before running docker run
+# this avoids having Docker creating it as root user
+mkdir -p "${HOME}/.composer/cache"
+
 tty=
 tty -s && tty=--tty
 
