@@ -10,7 +10,13 @@ mkdir -p "${HOME}/.composer/cache"
 tty=
 tty -s && tty=--tty
 
+env=
+if [ -f .env ]; then
+    env="--env-file .env"
+fi
+
 docker run --rm ${tty} --interactive \
+    ${env} \
     --user "$(id -u):$(id -g)" \
     --volume "${HOME}/.composer:/composer" \
     --volume "$(pwd):/app" \
