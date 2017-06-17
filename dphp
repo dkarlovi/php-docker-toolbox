@@ -44,6 +44,7 @@ if [ $? -eq 0 ]; then
     NETWORK="--network ${NETWORK_NAME}"
 fi
 
+[ "${DOCKER_PULL}" == "1" ] && docker pull "${IMAGE}:${TAG}"
 docker run --rm  --interactive \
     ${TTY} \
     ${ENV_FILE} \
