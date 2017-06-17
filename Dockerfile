@@ -11,6 +11,7 @@ RUN apk add --update --no-cache autoconf g++ icu icu-dev inotify-tools imagemagi
 ENV PATH="/toolbox/vendor/bin:${PATH}"
 COPY vendor /toolbox/vendor
 COPY sys/docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod 777 /usr/local/etc/php/conf.d
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 WORKDIR /app

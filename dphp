@@ -48,6 +48,7 @@ docker run --rm  --interactive \
     ${TTY} \
     ${ENV_FILE} \
     ${NETWORK} \
+    --env "XDEBUG_ENABLE=${XDEBUG_ENABLE}" \
     --user "$(id -u):$(id -g)" \
     --volume "${HOME}/.composer:/composer" \
     --volume "$(pwd):/app" \
