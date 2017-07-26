@@ -12,7 +12,7 @@
         "friendsofphp/php-cs-fixer": "^2.3",
         "phing/phing": "^2.16",
         "phpmd/phpmd": "^2.6",
-        "phpstan/phpstan": "^0.7.0",
+        "phpstan/phpstan": "^0.8",
         "phpunit/phpunit": "^6.1",
         "sebastian/phpcpd": "^3.0"
     },
