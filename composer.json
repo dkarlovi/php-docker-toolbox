@@ -13,6 +13,7 @@
         "phing/phing": "^2.16",
         "phpmd/phpmd": "^2.6",
         "phpstan/phpstan": "^0.8",
+        "phpunit/phpcov": "^4.0",
         "phpunit/phpunit": "^6.2",
         "sebastian/phpcpd": "^3.0",
         "sensiolabs/security-checker": "^4.1"

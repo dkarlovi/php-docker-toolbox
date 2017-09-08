@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "472b5cc6a1a6739bd8f71fc3e73919bc",
+    "content-hash": "9481c97b94d85febdaf0201546125774",
     "packages": [
         {
             "name": "behat/behat",
@@ -2665,6 +2665,58 @@
                 "tokenizer"
             ],
             "time": "2017-08-20T05:47:52+00:00"
+        },
+        {
+            "name": "phpunit/phpcov",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpcov.git",
+                "reference": "8afb1e74ce354cc09374d81ef00a0c3d4b7eb7e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpcov/zipball/8afb1e74ce354cc09374d81ef00a0c3d4b7eb7e9",
+                "reference": "8afb1e74ce354cc09374d81ef00a0c3d4b7eb7e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "phpunit/php-code-coverage": "^5.0",
+                "phpunit/phpunit": "^6.0",
+                "sebastian/diff": "^1.1",
+                "sebastian/finder-facade": "^1.1",
+                "sebastian/version": "^2.0",
+                "symfony/console": "^3"
+            },
+            "bin": [
+                "phpcov"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "CLI frontend for PHP_CodeCoverage",
+            "homepage": "https://github.com/sebastianbergmann/phpcov",
+            "time": "2017-04-27T18:08:16+00:00"
         },
         {
             "name": "phpunit/phpunit",
